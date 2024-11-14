@@ -5,29 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Культура Здоровья</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <nav class="navigation">
             <div class="nav1">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                 <a href="#">Gallery</a>
+                <a href="#">Massage</a>
+                <a href="#">SPA</a>
+                <a href="#">Beauty</a>
+                <a href="#">Акции</a>
             </div>
             <div class="logo">
-              <img src="https://assets.onecompiler.app/42wr46r35/42wqtaxsr/image-31-10-24-03-22.jpeg" alt="logo" />
-              <h1></h1>
+                <img src="https://assets.onecompiler.app/42wr46r35/42wqtaxsr/image-31-10-24-03-22.jpeg" alt="logo" />
             </div>
             <div class="nav2">
-                <a href="#"> <img class="address_img" src="https://assets.onecompiler.app/42wr46r35/42wqtaxsr/Vector(2).png" alt="address" /> Address</a> 
-                <a href="#">Contacts</a>
+                <a href="#">Сертификаты</a> 
+                <a href="#">Контакты</a>
             </div>
         </nav>
     </header>
     
-    <h1 class="title">H!</h1>
-    <p id="currentTime"></p>
+    <main>
+         <section id="services">
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="Массаж стоп" />
+                    <h3>МАССАЖ СТОП</h3>
+                    <p class="description">
+                      Рефлекторные точки, расположенные на стопах, отвечают за состояние организма 
+                      в целом – позвоночник, глаза, уши, зубы и десны, нос. Массаж подошвы стоп положительно влияет на мышцы,
+                      кожу и опорно-двигательный аппарат. Массирование нижних конечностей нормализует работу организма, 
+                      избавляет от головных болей, улучшает работу сердечно-сосудистой системы, 
+                      укрепляет иммунитет и регулирует гормональный фон. Массаж ног отличается от других процедур тем, 
+                      что воздействие происходит не на конкретные мышцы, а на весь организм.
+                    </p>
+                    <p class="price">30 минут - 1300 ₽</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="МАССАЖ ШЕЙНО-ВОРОТНИКОВОЙ ЗОНЫ" />
+                    <h3>МАССАЖ ШЕЙНО-ВОРОТНИКОВОЙ ЗОНЫ</h3>
+                    <p class="description">
+                      Массаж шейно-воротниковой зоны расслабляет мышцы шеи, улучшает кровообращение 
+                      и обмен веществ в шейном отделе, ускоряет отток лимфы, улучшает питание органов шеи и головы. 
+                      С помощью массажа снимают локальные мышечные затвердения и болезненные ощущения в шейном отделе. 
+                      Это очень эффективный способ избавиться от болей в области лопаток и плеч, забыть о мышечных болях 
+                      в спине и напряжении мышц шеи, позволяет снять отечность и припухлость.
+                    </p>
+                    <p class="price">30 минут - 1300 ₽</p>
+                </div>
+                <div class="product-card">
+                  <img src="https://via.placeholder.com/150" alt="ВИСЦЕРАЛЬНЫЙ МАССАЖ" />
+                  <h3>ВИСЦЕРАЛЬНЫЙ МАССАЖ</h3>
+                  <p class="description">
+                    Висцеральный массаж – это техника глубокого ручного массажа внутренних органов 
+                    (кишечник, печень и почки) через переднюю брюшную стенку с целью улучшения состояния ЖКТ,
+                    перистальтики кишечника и всего организма в целом.
+                    Висцеральная терапия налаживает и гармонизирует связь между внутренними органами, лимфатической системой,
+                    дыхательной системой и кровообращением.
+                  </p>
+                  <p class="price">30 минут - 1300 ₽</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="Уход за лицом" />
+                    <h3>Уход за лицом</h3>
+                    <p class="price">1200 ₽</p>
+                    <p class="description">Омолаживающие процедуры для лица.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="Маникюр и педикюр" />
+                    <h3>Маникюр и педикюр</h3>
+                    <p class="price">800 ₽</p>
+                    <p class="description">Услуги по уходу за руками и ногами.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about">
+            <h2>Сертификаты</h2>
+            <p>Наша команда профессионалов обеспечит вам максимальный комфорт и расслабление.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Контакты</h2>
+            <p>Телефон: +7 (999) 123-45-67</p>
+            <p>Email: info@culture-healthy.ru</p>
+        </section>
+    </main>
+
+    <footer>
+      <p class = "copyright">&copy; 2024 Культура Здоровья</p>
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>
