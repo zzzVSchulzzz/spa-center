@@ -10,6 +10,8 @@ body {
     background: white;
     color: black;
     padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .navigation {
@@ -27,12 +29,12 @@ body {
     text-decoration: none;
     margin: 0 15px;
     padding: 10px;
-    transition: background 0.3s;
     text-transform: uppercase;
 }
 
 .nav1 a:hover, .nav2 a:hover {
     background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.2);
 }
 
 .logo {
@@ -55,33 +57,58 @@ section {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-
 /* Стили для карточек товаров */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
+/* Стиль для одной карточки товара */
 .product-card {
-    background: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
+    background: #1a1a1a; 
+    padding: 15px;
+    border-radius: 8px; 
     text-align: center;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s; 
+    display: flex; /* Используем flexbox для выравнивания содержимого */
+    flex-direction: column; /* Упорядочиваем элементы в колонну */
+    align-items: center; /* Центрируем элементы по горизонтали */
+}
+
+/* Эффект наведения на карточку */
+.product-card:hover {
+    transform: translateY(-5px); 
 }
 
 .product-card img {
-    max-width: 100%;
-    border-radius: 5px;
+    max-width: 100%; /* Максимальная ширина изображения относительно карточки */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    border-radius: 8px; /* Закругление углов изображения */
+    margin-bottom: 10px; /* Отступ снизу для расстояния от текста */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Стили для цены товара */
 .price {
-    font-size: 1.2em;
-    color: #4CAF50;
+    font-size: 1.5em; 
+    color: #ffcc00; 
+    margin: 10px 0; 
 }
 
-.footer, .copyright {
+/* Стили для описания товара */
+.description {
+    font-size: 0.9em; 
+    color: #ccc; 
+    margin-top: 5px; 
+}
+
+.footer, p, h3, .copyright {
     text-align: center;
     padding: 10px 0;
     background: transparent;
