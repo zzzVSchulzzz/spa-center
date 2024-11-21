@@ -21,8 +21,8 @@ $(document).ready(function () {
   });
 
   // Открытие модального окна
-  const loginIcon = document.querySelector('login-icon');
-  const modal = document.querySelector('login-modal');
+  const loginIcon = document.querySelector('#login-icon');
+  const modal = document.querySelector('#login-modal');
   const closeBtn = document.querySelector('.close');
 
   loginIcon.addEventListener('click', (e) => {

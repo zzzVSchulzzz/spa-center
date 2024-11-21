@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth; /* Включаем плавную прокрутку */
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -76,29 +80,29 @@ body {
 main {
     padding: 20px;
     font-family: Arial, sans-serif;
-  }
-  
-  section {
+}
+
+section {
     margin: 30px 0;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  section h2 {
+}
+
+section h2 {
     font-size: 1.8em;
     color: #333;
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .product-carousel {
+}
+
+.product-carousel {
     display: flex;
     gap: 20px;
-  }
-  
-  .product-carousel {
+}
+
+.product-carousel {
     padding: 20px;
 }
 
@@ -155,34 +159,33 @@ main {
     transform: translateY(-5px);
 }
 
-  
-  /* Discount section */
-  .discount {
+/* Discount section */
+.discount {
     background: #f7f7f7;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
     margin-bottom: 10px;
     font-size: 1.1em;
-  }
-  
-  .discount span {
+}
+
+.discount span {
     color: #ff5722;
     font-weight: bold;
-  }
-  
-  /* Contact section */
-  #contact {
+}
+
+/* Contact section */
+#contact {
     text-align: center;
-  }
-  
-  #contact p {
+}
+
+#contact p {
     font-size: 1em;
     margin: 10px 0;
     color: #333;
-  }
-  
-  /* Стили модального окна */
+}
+
+/* Стили модального окна */
 .modal {
     display: none; /* Скрыто по умолчанию */
     position: fixed; /* Фиксированное положение */
@@ -196,6 +199,7 @@ main {
 }
 
 .modal-content {
+    position: relative;
     background-color: white;
     margin: 15% auto; /* Центрирование модального окна */
     padding: 20px;
@@ -205,20 +209,69 @@ main {
     text-align: center;
 }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+/* Стили крестика закрытия */
+.modal-content span.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5em;
+    color: #888;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
+.modal-content span.close:hover {
+    color: #000;
 }
 
+/* Стили для формы */
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Расстояние между элементами формы */
+}
+
+.modal-content label {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333; /* Цвет текста */
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.modal-content input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc; /* Границы */
+    border-radius: 5px; /* Скругление углов */
+    width: 100%; /* Заполнение доступного пространства */
+    box-sizing: border-box; /* Учитывать padding при расчете ширины */
+}
+
+.modal-content input:focus {
+    outline: none; /* Убираем стандартное выделение */
+    border-color: #007BFF; /* Цвет границы при фокусе */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Подсветка */
+}
+
+.modal-content button {
+    padding: 10px;
+    font-size: 1em;
+    color: #fff; /* Белый текст */
+    background-color: #007BFF; /* Синий фон */
+    border: none; /* Убираем границы */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+    background-color: #0056b3; /* Темно-синий фон при наведении */
+}
+
+.modal-content button:active {
+    background-color: #004085; /* Еще более темный фон при нажатии */
+}
 
 .footer, p, h3, .copyright {
     text-align: center;
@@ -233,3 +286,4 @@ main {
 .discount, p {
     color: #1a1a1a;
 }
+
