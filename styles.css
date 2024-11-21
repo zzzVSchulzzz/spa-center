@@ -174,6 +174,10 @@ section h2 {
     font-weight: bold;
 }
 
+.discount p {
+    color: #1a1a1a;
+}
+
 /* Contact section */
 #contact {
     text-align: center;
@@ -273,17 +277,12 @@ section h2 {
     background-color: #004085; /* Еще более темный фон при нажатии */
 }
 
-.footer, p, h3, .copyright {
+footer p.copyright {
     text-align: center;
     padding: 10px 0;
     background: transparent;
-    color: #fff;
+    color: #ccc;
     position: relative;
     bottom: 0;
     width: 100%;
 }
-
-.discount, p {
-    color: #1a1a1a;
-}
-

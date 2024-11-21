@@ -45,14 +45,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //был ли запрос отпр
         <nav class="navigation">
             <!-- Логотип -->
             <div class="logo">
-                <img src="https://assets.onecompiler.app/42wr46r35/42wqtaxsr/image-31-10-24-03-22.jpeg" alt="logo" />
+                <img src="assets/image-31-10-24-03-22.jpeg" alt="logo" />
             </div>
 
             <!-- Навигация -->
             <div class="nav1">
                 <a href="#services">Массажи</a>
-                <a href="#">Акции</a>
-                <a href="#abonements">Абонементы</a>
+                <a href="#abonements">Акции</a>
                 <a href="#contact">Контакты</a>
                 <!-- Иконка логина -->
                 <a href="#" class="login" id="login-icon">
@@ -63,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //был ли запрос отпр
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <h2>Вход в личный кабинет</h2>
-                    <?php if (!empty($error)) echo "<p style='color:red;'>$error</p>"; ?> // вывод ошибки
+                    <?php if (!empty($error)) echo "<p style='color:red;'>$error</p>"; ?> <!-- вывод ошибки -->
                     <form method="POST" action="login.php">
                         <label for="username">Логин:</label>
                         <input type="text" id="username" name="username" required>
@@ -80,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //был ли запрос отпр
         <section id="services">
         <div class="product-grid, product-carousel">
             <div class="product-card">
-                        <img src="https://assets.onecompiler.app/42wr46r35/42wqtaxsr/image-03-11-24-08-41-2.png" alt="Массаж стоп" />
+                        <img src="assets/foots.png" alt="Массаж стоп" />
                         <h3>МАССАЖ СТОП</h3>
                         <p class="description">
                         Рефлекторные точки, расположенные на стопах, отвечают за состояние организма 
@@ -93,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //был ли запрос отпр
                         <p class="price">30 минут - 1300 ₽</p>
             </div>
             <div class="product-card">
-                        <img src="https://assets.onecompiler.app/42wr46r35/42wqtaxsr/image-03-11-24-08-41-2.png" alt="МАССАЖ ШЕЙНО-ВОРОТНИКОВОЙ ЗОНЫ" />
+                        <img src="assets/neck.jpg" alt="МАССАЖ ШЕЙНО-ВОРОТНИКОВОЙ ЗОНЫ" />
                         <h3>МАССАЖ ШЕЙНО-ВОРОТНИКОВОЙ ЗОНЫ</h3>
                         <p class="description">
                         Массаж шейно-воротниковой зоны расслабляет мышцы шеи, улучшает кровообращение 
@@ -105,7 +104,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //был ли запрос отпр
                         <p class="price">30 минут - 1300 ₽</p>
             </div>
             <div class="product-card">
-                    <img src="https://assets.onecompiler.app/42wr46r35/42wqtaxsr/image-03-11-24-08-41-2.png" alt="ВИСЦЕРАЛЬНЫЙ МАССАЖ" />
+                    <img src="assets/visceral.jpg" alt="ВИСЦЕРАЛЬНЫЙ МАССАЖ" />
                     <h3>ВИСЦЕРАЛЬНЫЙ МАССАЖ</h3>
                     <p class="description">
                         Висцеральный массаж – это техника глубокого ручного массажа внутренних органов 
@@ -117,7 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //был ли запрос отпр
                     <p class="price">30 минут - 1300 ₽</p>
             </div>
             <div class="product-card">
-                    <img src="https://assets.onecompiler.app/42wr46r35/42wqtaxsr/image-03-11-24-08-41-2.png" alt="КЛАССИЧЕСКИЙ МАССАЖ ЛИЦА" />
+                    <img src="assets/face.jpg" alt="КЛАССИЧЕСКИЙ МАССАЖ ЛИЦА" />
                     <h3>КЛАССИЧЕСКИЙ МАССАЖ ЛИЦА</h3>
                     <p class="description">
                         Эффективная мануальная процедура, главная задача которой – продлить молодость и сияние кожи, 
@@ -130,7 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //был ли запрос отпр
                     <p class="price">60 минут - 2300 ₽</p>
             </div>
             <div class="product-card">
-                    <img src="https://assets.onecompiler.app/42wr46r35/42wqtaxsr/image-03-11-24-08-41-2.png" alt="КОБИДО" />
+                    <img src="assets/kobido.jpg" alt="КОБИДО" />
                     <h3>ЯПОНСКИЙ МАССАЖ ЛИЦА "КОБИДО"</h3>
                     <p class="description">
                         Благотворный эффект массажа кобидо достигается благодаря релаксации мышц лица и шеи, 
@@ -147,7 +146,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //был ли запрос отпр
                     <p class="price">60 минут - 2500 ₽</p>
             </div>
             <div class="product-card">
-                    <img src="https://assets.onecompiler.app/42wr46r35/42wqtaxsr/image-03-11-24-08-41-2.png" alt="КЛАССИЧЕСКИЙ МАССАЖ" />
+                    <img src="assets/classic.jpg" alt="КЛАССИЧЕСКИЙ МАССАЖ" />
                     <h3>КЛАССИЧЕСКИЙ МАССАЖ</h3>
                     <p class="description">
                         Классический массаж тела способствует укреплению иммунитета, помогает уменьшить боль в теле, 
@@ -158,7 +157,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //был ли запрос отпр
                     <p class="price">90 минут - 3700 ₽</p>
             </div>
             <div class="product-card">
-                    <img src="https://assets.onecompiler.app/42wr46r35/42wqtaxsr/image-03-11-24-08-41-2.png" alt="АНТИЦЕЛЛЮЛИТНЫЙ МАССАЖ" />
+                    <img src="assets/anti.png" alt="АНТИЦЕЛЛЮЛИТНЫЙ МАССАЖ" />
                     <h3>АНТИЦЕЛЛЮЛИТНЫЙ МАССАЖ</h3>
                     <p class="description">
                         Антицеллюлитный массаж – это механическое воздействие на кожу с помощью определенных техник, направленное на уменьшение и нормализацию обмена веществ в подкожно-жировом слое.
@@ -169,7 +168,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //был ли запрос отпр
                     <p class="price">40 минут - 2300 ₽</p>
             </div>
             <div class="product-card">
-                    <img src="https://assets.onecompiler.app/42wr46r35/42wqtaxsr/image-03-11-24-08-41-2.png" alt="РАССЛАБЛЯЮЩИЙ МАССАЖ" />
+                    <img src="assets/relax.jpg" alt="РАССЛАБЛЯЮЩИЙ МАССАЖ" />
                     <h3>РАССЛАБЛЯЮЩИЙ МАССАЖ</h3>
                     <p class="description">
                     Главная цель расслабляющего массажа — расслабить организм, успокоить нервную систему от стресса и 
@@ -179,7 +178,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //был ли запрос отпр
                     <p class="price">90 минут - 3400 ₽</p>
             </div>
             <div class="product-card">
-                    <img src="https://assets.onecompiler.app/42wr46r35/42wqtaxsr/image-03-11-24-08-41-2.png" alt="ЛИМФОДРЕНАЖНЫЙ МАССАЖ" />
+                    <img src="assets/lymphatic.jpg" alt="ЛИМФОДРЕНАЖНЫЙ МАССАЖ" />
                     <h3>ЛИМФОДРЕНАЖНЫЙ МАССАЖ</h3>
                     <p class="description">
                     Лимфодренажный массаж – методика механического и мануального (ручного) воздействия на организм, оказывающая влияние на движение лимфы по телу. 
@@ -190,7 +189,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //был ли запрос отпр
                     <p class="price">90 минут - 3900 ₽</p>
             </div>
             <div class="product-card">
-                    <img src="https://assets.onecompiler.app/42wr46r35/42wqtaxsr/image-03-11-24-08-41-2.png" alt="МАССАЖ СПИНЫ" />
+                    <img src="assets/back.jpg" alt="МАССАЖ СПИНЫ" />
                     <h3>МАССАЖ СПИНЫ</h3>
                     <p class="description">
                     Массаж спины – уникальный метод комплексной терапии заболеваний опорно-двигательного аппарата, 
@@ -202,7 +201,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //был ли запрос отпр
                     <p class="price">40 минут - 1800 ₽</p>
             </div>
             <div class="product-card">
-                        <img src="https://assets.onecompiler.app/42wr46r35/42wqtaxsr/image-03-11-24-08-41-2.png" alt="МАССАЖ ГОЛОВЫ И ШЕИ" />
+                        <img src="assets/head.jpg" alt="МАССАЖ ГОЛОВЫ И ШЕИ" />
                         <h3>МАССАЖ ГОЛОВЫ И ШЕИ</h3>
                         <p class="description">
                         Массаж головы и шеи усиливает микроциркуляцию в
@@ -217,9 +216,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //был ли запрос отпр
         </div>
         </section>
 
-
         <section id="abonements">
-            <h2>Абонементы</h2>
+            <h2>Абонементы со скидкой</h2>
             <div class="discount">
                 <p>
                 5 сеансов(срок действия 2 недели) <span>-10%</span>
@@ -238,7 +236,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //был ли запрос отпр
         </section>
 
         <section id="contact">
-            <h2>Контакты</h2>
+            <h2>Связаться с нами</h2>
             <p>Телефон: +7 (918) 082-77-88</p>
             <p>Email: info@kultura_zdorovia.ru</p>
         </section>
